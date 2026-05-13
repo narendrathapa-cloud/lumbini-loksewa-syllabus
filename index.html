@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ne">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>PPSC पाठ्यक्रम सूची</title>
+
+<link rel="stylesheet"
+href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+
+</head>
+
+<body>
+
+<div class="topbar">
+
+    <div class="title-section">
+        <h3>प्रदेश लोक सेवा आयोग</h3>
+        <h4>लुम्बिनी प्रदेश</h4>
+        <h1>पाठ्यक्रम सूची</h1>
+    </div>
+
+    <div class="top-buttons">
+
+        <a
+            href="https://ppsc.lumbini.gov.np"
+            target="_blank"
+            class="home-btn"
+        >
+            🏠 Home Page
+        </a>
+
+        <button id="darkModeToggle">
+            🌙 Dark Mode
+        </button>
+
+    </div>
+
+</div>
+
+<div class="filter-wrapper">
+
+    <div class="filters">
+
+        <select id="serviceFilter">
+            <option value="">सबै सेवा</option>
+        </select>
+
+        <select id="levelFilter">
+            <option value="">सबै तह</option>
+        </select>
+
+        <select id="groupFilter">
+            <option value="">सबै समूह</option>
+        </select>
+
+        <select id="typeFilter">
+            <option value="">सबै खुला प्रकार</option>
+        </select>
+
+        <input
+            type="text"
+            id="advancedSearch"
+            placeholder="पद वा सेवा खोज्नुहोस्..."
+        >
+        <button id="resetFilters">
+        Reset Filters
+        </button>
+        
+    </div>
+
+</div>
+
+<div class="table-container">
+
+<table id="syllabusTable" class="display nowrap">
+
+<thead>
+<tr>
+    <th>क्र.स.</th>
+    <th>सेवा</th>
+    <th>श्रेणी/तह</th>
+    <th>समूह</th>
+    <th>उपसमूह</th>
+    <th>मिति</th>
+    <th>पद</th>
+    <th>खुला प्रकार</th>
+    <th>फाइल</th>
+</tr>
+</thead>
+
+<tbody></tbody>
+
+</table>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
